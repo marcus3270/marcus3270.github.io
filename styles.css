@@ -93,3 +93,11 @@ section{
 .list li:not(:last-child)after{
     content:", ";
 }
+ul{
+    list-style-type: none;
+}
+.prose{
+    text-align: justify;
+    max-width: 500px;
+    margin: 0 auto;
+}
