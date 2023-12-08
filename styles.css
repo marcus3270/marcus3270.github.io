@@ -21,6 +21,7 @@ html, body{
 }
 body{
     text-align: center;
+    overflow-x: hidden;
 }
 h1{
     font-size: 36px;
@@ -52,7 +53,7 @@ section:target h1{
 }
 section{
     border-top: 2px dashed#eee;
-    padding: 50px 0;
+    padding: 50px 10;
     max-width: 800px;
     margin: 0 auto;
 
@@ -66,6 +67,7 @@ address{
 .hero{
     
     height:100vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +123,7 @@ ul{
     width: 100%;
     display: flex;
     position: fixed;
+    z-index: 9999;
 }
 .nav li{
     list-style-type: none;
