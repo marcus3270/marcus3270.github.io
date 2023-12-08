@@ -39,6 +39,17 @@ a:hover{
 
     color:#369
 }
+section:target h1{
+    animation: flash 1s;
+}
+@keyframes flash{
+    from{
+        text-shadow: 5px 5px 0px #fd6, -5px -5px 0px #fd6;
+    }
+    to{
+        text-shadow: 0px 0px 0px #fd6;
+    }
+}
 section{
     border-top: 2px dashed#eee;
     padding: 50px 0;
@@ -105,6 +116,27 @@ ul{
     text-align: justify;
     max-width: 500px;
     margin: 0 auto;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+.nav li{
+    list-style-type: none;
+    flex-grow: 1;
+}
+.nav li a{
+    display: block;
+    line-height: 50px;
+    background-color: #fc0;
+    color: #666;
+    text-shadow: 1px 1px 0px #fd6;
+    transition: background-color 0.2s;
+}
+.nav li a:hover{
+    background-color: #fa0;
+
 }
 
     
